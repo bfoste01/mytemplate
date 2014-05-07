@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<section class="previous-posts-container clearfix">
+    <div class="previous-posts clearfix">
+        <div class="previous-posts-inner clearfix">
+            <h1 class="previous-posts-title">Archives</h1>
+            <hr>
+            <ul class="ppd">
+                {% for post in site.posts %}
+                <li>
+                    <time datetime="{{ post.date | date: " %Y-%m-%d " }}" pubdate="pubdate">
+                        <span itemprop="datePublished" content="{{ post.date | date: " %Y-%m-%d " }}">
+                            {{ post.date | date_to_string }}
+                        </span>
+                </li>
+                {% endfor %}
+            </ul>
+            <ul class="ppt">
+                {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url }}">
+                        </time>
+                        <span itemprop="name headline">
+                            {{ post.title }}
+                        </span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</section>
+

@@ -1,0 +1,64 @@
+--- 
+layout: default 
+---
+<section itemscope itemtype="http://schema.org/BlogPosting" class="blog-post-container clearfix">
+    {% for post in site.posts limit: 1 %}
+    <div class="blog-post-image">
+        <img class="bpi-image" src="{{ post.img }}">
+    </div>
+    <hr>
+    <article class="col1 blog-post">
+        <div class="blog-post-inner">
+            <hgroup>
+                <h1 class="blog-post-title" itemprop="name headline">
+                    <a itemprop="url" href="{{ site.prefix }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                </h1>
+                <h2 class="blog-post-subtitle">
+                    "{{ post.subtitle }}"
+                </h2>
+                <h2 class="blog-post-date">
+                    <time datetime="{{ post.date | date: " %Y-%m-%d " }}" pubdate="pubdate">
+                        <span itemprop="datePublished" content="{{ post.date | date: " %Y-%m-%d " }}">{{ post.date | date_to_string }}</span>
+                    </time>
+                </h2>
+            </hgroup>
+            <div class="blog-post-content">
+                <span itemprop="articleBody">
+                    {{ post.content }}
+                </span>
+            </div>
+        </div>
+    </article>
+    {% endfor %}
+</section>
+<hr>
+<section class="previous-posts-container clearfix">
+    <div class="previous-posts clearfix">
+        <div class="previous-posts-inner clearfix">
+            <h1 class="previous-posts-title"><a href="/archives">Recent Posts</a></h1>
+            <ul class="ppd">
+                {% for post in site.posts limit: 10 %}
+                <li>
+                    <time datetime="{{ post.date | date: " %Y-%m-%d " }}" pubdate="pubdate">
+                        <span itemprop="datePublished" content="{{ post.date | date: " %Y-%m-%d " }}">
+                            {{ post.date | date_to_string }}
+                        </span>
+                </li>
+                {% endfor %}
+            </ul>
+            <ul class="ppt">
+                {% for post in site.posts limit: 10 %}
+                <li>
+                    <a href="{{ post.url }}">
+                        </time>
+                        <span itemprop="name headline">
+                            {{ post.title }}
+                        </span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</section>

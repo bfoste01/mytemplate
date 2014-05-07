@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="robots" content="index, follow">
+    <meta name="bitly-verification" content="7c235b444737"/>
+    <meta name="description" content="Blog and portfolio for Eric Lagergren -- a college student studying CNE at Pierce College. Loves sports, politics, and is from Puyallup, Washington.">
+    <meta name="author" content="Eric Lagergren">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.ericlagergren.com">
+    <meta property="og:image" content="http://www.ericlagergren.com/{{ page.img }}">
+    <meta property="og:description" content="Blog and portfolio for Eric Lagergren -- a college student studying CNE at Pierce College. Loves sports, politics, and is from Puyallup, Washington.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@elagergren">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.subtitle }}">
+    <meta name="twitter:creator" content="@elagergren">
+    <meta name="twitter:image:src" content="http://www.ericlagergren.com{{ page.img }}">
+    <meta name="twitter:domain" content="www.ericlagergren.com">
+    <script type="text/javascript" src="//use.typekit.net/uui0gci.js"></script>
+    <script type="text/javascript">
+    try {
+        Typekit.load();
+    } catch (e) {}
+    </script>
+    <title>Eric Lagergren | CNE, Politics, Sports</title>
+    <link rel="shortcut icon" href="../img/nonanimatedfavicon.ico">
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>-->
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/normalize.min.css" rel="stylesheet">
+    <link href="/css/ericlagergren.min.css" rel="stylesheet">
+    <script src="/js/modernizr.custom.93842.js"></script>
+    <!--[if lt IE 8]>
+    <style>
+    #message{display:block;}
+    .mobile{display:none;}
+    .col2 {width:100%;}
+    .by-copyright{text-align:center;float:none;width:100%;}
+    .powered-hosted{text-align:center;float:none;width:100%}
+    .footer-container{margin-top:75px;}
+    a img {height:339px; width:auto;}
+    </style>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+<noscript><style>#message {display:block;}</style></noscript>
+<div id="message"><a href="/message">Your browser isn't supported!! More info...</a></div>
+{% include fullnav.html %}{% include navigation.html %}
+{{ content }}
+</div>
+{% include footer.html %}
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="/js/master.min.js"></script>
+</body>
+</html>
