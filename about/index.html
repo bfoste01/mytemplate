@@ -1,63 +1,19 @@
---- 
-layout: default 
+---
+layout: default
+author:
+  name: Eric Lagergren
+  url: http://www.ericlagergren.com
+  email: contact@ericlagergren.com
+  github: EricLagerg
+  twitter: elagergren
+  facebook: eric.lagergren.9
+  instagram: ericscotttt
+  google: +EricLagergren5894
+  linkedin: in/elagerg
 ---
 <section class="about-container">
-    <section class="contact-buttons">
-        <div class="social-image-icon"><a class="round-border" href="https://twitter.com/elagergren" target="_blank"><i class="fa fa-twitter"></i></a>
-        </div>
-        <div class="social-image-icon"><a class="round-border" href="https://instagram.com/ericscotttt" target="_blank"><i class="fa fa-instagram"></i></a>
-        </div>
-        <div class="social-image-icon"><a class="round-border" href="https://www.linkedin.com/in/elagerg" target="_blank"><i class="fa fa-linkedin"></i></a>
-        </div>
-        <div class="social-image-icon"><a href="https://www.github.com/ericlagerg" class="round-border" target="_blank"><i class="fa fa-github"></i></a>
-        </div>
-    </section>
+{% include socialiconsidebar.html %}
     <div class="about-content">
-        <div id="name">
-            Hi, I'm
-            <span itemscope itemtype="person" itemprop="name">Eric Lagergren.</span>
-        </div>
-        <br />
-        <div itemscope itemtype="http://schema.org/PostalAddress" id="location">I'm from
-            <a href="https://en.wikipedia.org/wiki/Puyallup,_Washington">
-                <span itemprop="addressLocality" style="display:none;">Puyallup,</span>
-                <span itemprop="addressRegion">Washington</span>
-            </a>. The state, not the city on the other side of the U.S.
-        </div>
-        <br />
-        <div id="college">I'm studying Computer Network Engineering at <a href="https://www.pierce.ctc.edu/">Pierce College</a> -- on track to be come a sysadmin... eventually. I'll be graduating in 2015.
-        </div>
-        <br />
-        <div id="likes">Other than what I'm studying, I'm an avid sports fan, I'm involved in local politics, and I
-            <s>sometimes</s> go to the gym.</div>
-        <br />
-        <div>This site is powered <a href="http://www.jekyllrb.com">Jekyll</a> and is hosted on <a href="https://www.github.com/">GitHub</a>.
-            <br>
-            <br>
-            <div id="contact-box">
-                email: <a href="mailto:contact@ericlagergren.com" itemprop="email">contact@ericlagergren.com</a>
-                <br />phone: <a href="tel:+12534055495" itemprop="telephone">+1 (253) 405-495</a>
-                <br />my <a href="/documents/Eric Lagergren Curriculum Vitae.pdf">resume</a>
-
-                <script type="application/ld+json">
-                {
-                    "@type": "http://schema.org/Person",
-                    "http://schema.org/address": {
-                        "@type": "http://schema.org/PostalAddress",
-                        "http://schema.org/addressLocality": "Puyallup",
-                        "http://schema.org/addressRegion": "WA",
-                        "http://schema.org/postalCode": "98371"
-                    },
-                    "http://schema.org/email": "mailto:contact@ericlagergren.com",
-                    "http://schema.org/image": "eric.jpg",
-                    "http://schema.org/name": "Eric Lagergren",
-                    "http://schema.org/telephone": "(253) 405-5495",
-                    "http://schema.org/url": "http://www.ericlagergren.com"
-                }
-                </script>
-
-            </div>
-
-            <br />
-        </div>
+{% include about.html %}
+    </div>
 </section>

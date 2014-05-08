@@ -1,79 +1,78 @@
 (function() {
-    var ab = window;
-
-    function aa(e) {
-        var d = Z,
-            h;
+    function e(e) {
+        var t = y,
+            n;
         e: {
-            h = d.className.split(/\s+/);
-            for (var c = 0, f = h.length; c < f; c += 1) {
-                if (h[c] === e) {
-                    h = !0;
+            n = t.className.split(/\s+/);
+            for (var r = 0, i = n.length; r < i; r += 1) {
+                if (n[r] === e) {
+                    n = !0;
                     break e
                 }
             }
-            h = !1
+            n = !1
         }
-        h || (d.className += ("" === d.className ? "" : " ") + e)
+        n || (t.className += ("" === t.className ? "" : " ") + e)
     }
 
-    function Y(d, c, e) {
-        this.b = null != d ? d : null;
-        this.c = null != c ? c : null;
-        this.e = null != e ? e : null
-    }
-    var X = /^([0-9]+)(?:[\._-]([0-9]+))?(?:[\._-]([0-9]+))?(?:[\._+-]?(.*))?$/;
-
-    function W(d, c) {
-        return d.b > c.b || d.b === c.b && d.c > c.c || d.b === c.b && d.c === c.c && d.e > c.e ? 1 : d.b < c.b || d.b === c.b && d.c < c.c || d.b === c.b && d.c === c.c && d.e < c.e ? -1 : 0
+    function t(e, t, n) {
+        this.b = null != e ? e : null;
+        this.c = null != t ? t : null;
+        this.e = null != n ? n : null
     }
 
-    function V(d, c) {
-        return 0 === W(d, c) || 1 === W(d, c)
+    function n(e, t) {
+        return e.b > t.b || e.b === t.b && e.c > t.c || e.b === t.b && e.c === t.c && e.e > t.e ? 1 : e.b < t.b || e.b === t.b && e.c < t.c || e.b === t.b && e.c === t.c && e.e < t.e ? -1 : 0
     }
 
-    function U() {
-        var e = X.exec(T[1]),
-            d = null,
-            f = null,
-            c = null;
-        e && (null !== e[1] && e[1] && (d = parseInt(e[1], 10)), null !== e[2] && e[2] && (f = parseInt(e[2], 10)), null !== e[3] && e[3] && (c = parseInt(e[3], 10)));
-        return new Y(d, f, c)
+    function r(e, t) {
+        return 0 === n(e, t) || 1 === n(e, t)
     }
 
-    function R() {
-        var c = P;
-        return 3 === c.a || 7 === c.a || 6 === c.a || 9 === c.a || 8 === c.a || 5 === c.a ? "grayscale" : 1 === c.a && V(c.f, new Y(6, 2)) && 1 === c.d ? "grayscale" : "unknown"
+    function i() {
+        var e = u.exec(d[1]),
+            n = null,
+            r = null,
+            i = null;
+        e && (null !== e[1] && e[1] && (n = parseInt(e[1], 10)), null !== e[2] && e[2] && (r = parseInt(e[2], 10)), null !== e[3] && e[3] && (i = parseInt(e[3], 10)));
+        return new t(n, r, i)
     }
-    var P, N = ab.navigator.userAgent,
-        L = 0,
-        J = new Y,
-        o = 0,
-        j = new Y,
-        T = null;
-    if (T = /(?:iPod|iPad|iPhone).*? OS ([\d_]+)/.exec(N)) {
-        o = 3, j = U()
+
+    function s() {
+        var e = a;
+        return 3 === e.a || 7 === e.a || 6 === e.a || 9 === e.a || 8 === e.a || 5 === e.a ? "grayscale" : 1 === e.a && r(e.f, new t(6, 2)) && 1 === e.d ? "grayscale" : "unknown"
+    }
+    var o = window;
+    var u = /^([0-9]+)(?:[\._-]([0-9]+))?(?:[\._-]([0-9]+))?(?:[\._+-]?(.*))?$/;
+    var a, f = o.navigator.userAgent,
+        l = 0,
+        c = new t,
+        h = 0,
+        p = new t,
+        d = null;
+    if (d = /(?:iPod|iPad|iPhone).*? OS ([\d_]+)/.exec(f)) {
+        h = 3, p = i()
     } else {
-        if (T = /(?:BB\d{2}|BlackBerry).*?Version\/([^\s]*)/.exec(N)) {
-            o = 9, j = U()
+        if (d = /(?:BB\d{2}|BlackBerry).*?Version\/([^\s]*)/.exec(f)) {
+            h = 9, p = i()
         } else {
-            if (T = /Android ([^;)]+)|Android/.exec(N)) {
-                o = 5, j = U()
+            if (d = /Android ([^;)]+)|Android/.exec(f)) {
+                h = 5, p = i()
             } else {
-                if (T = /Windows Phone(?: OS)? ([^;)]+)/.exec(N)) {
-                    o = 8, j = U()
+                if (d = /Windows Phone(?: OS)? ([^;)]+)/.exec(f)) {
+                    h = 8, p = i()
                 } else {
-                    if (T = /Linux ([^;)]+)|Linux/.exec(N)) {
-                        o = 4, j = U()
+                    if (d = /Linux ([^;)]+)|Linux/.exec(f)) {
+                        h = 4, p = i()
                     } else {
-                        if (T = /OS X ([^;)]+)/.exec(N)) {
-                            o = 2, j = U()
+                        if (d = /OS X ([^;)]+)/.exec(f)) {
+                            h = 2, p = i()
                         } else {
-                            if (T = /Windows NT ([^;)]+)/.exec(N)) {
-                                o = 1, j = U()
+                            if (d = /Windows NT ([^;)]+)/.exec(f)) {
+                                h = 1, p = i()
                             } else {
-                                if (T = /CrOS ([^;)]+)/.exec(N)) {
-                                    o = 6, j = U()
+                                if (d = /CrOS ([^;)]+)/.exec(f)) {
+                                    h = 6, p = i()
                                 }
                             }
                         }
@@ -81,35 +80,35 @@
                 }
             }
         }
-    } if (T = /MSIE ([\d\w\.]+)/.exec(N)) {
-        L = 1, J = U()
+    } if (d = /MSIE ([\d\w\.]+)/.exec(f)) {
+        l = 1, c = i()
     } else {
-        if (T = /Trident.*rv:([\d\w\.]+)/.exec(N)) {
-            L = 1, J = U()
+        if (d = /Trident.*rv:([\d\w\.]+)/.exec(f)) {
+            l = 1, c = i()
         } else {
-            if (T = /OPR\/([\d.]+)/.exec(N)) {
-                L = 4, J = U()
+            if (d = /OPR\/([\d.]+)/.exec(f)) {
+                l = 4, c = i()
             } else {
-                if (T = /Opera Mini.*Version\/([\d\.]+)/.exec(N)) {
-                    L = 4, J = U()
+                if (d = /Opera Mini.*Version\/([\d\.]+)/.exec(f)) {
+                    l = 4, c = i()
                 } else {
-                    if (T = /Opera(?: |.*Version\/|\/)([\d\.]+)/.exec(N)) {
-                        L = 4, J = U()
+                    if (d = /Opera(?: |.*Version\/|\/)([\d\.]+)/.exec(f)) {
+                        l = 4, c = i()
                     } else {
-                        if (T = /Firefox\/([\d\w\.]+)|Firefox/.exec(N)) {
-                            L = 3, J = U()
+                        if (d = /Firefox\/([\d\w\.]+)|Firefox/.exec(f)) {
+                            l = 3, c = i()
                         } else {
-                            if (T = /(?:Chrome|CrMo|CriOS)\/([\d\.]+)/.exec(N)) {
-                                L = 2, J = U()
+                            if (d = /(?:Chrome|CrMo|CriOS)\/([\d\.]+)/.exec(f)) {
+                                l = 2, c = i()
                             } else {
-                                if (T = /Silk\/([\d\._]+)/.exec(N)) {
-                                    L = 7, J = U()
+                                if (d = /Silk\/([\d\._]+)/.exec(f)) {
+                                    l = 7, c = i()
                                 } else {
-                                    if (5 === o || 9 === o) {
-                                        L = 6
+                                    if (5 === h || 9 === h) {
+                                        l = 6
                                     } else {
-                                        if (T = /Version\/([\d\.\w]+).*Safari/.exec(N)) {
-                                            L = 5, J = U()
+                                        if (d = /Version\/([\d\.\w]+).*Safari/.exec(f)) {
+                                            l = 5, c = i()
                                         }
                                     }
                                 }
@@ -120,58 +119,58 @@
             }
         }
     }
-    P = new function(e, d, f, c) {
+    a = new function(e, t, n, r) {
         this.d = e;
-        this.g = d;
-        this.a = f;
-        this.f = c
-    }(L, J, o, j);
-    var i = R(),
-        b, a = R();
-    b = "unknown" !== a ? a : 2 === P.a || 4 === P.a ? "subpixel" : 1 === P.a ? V(P.f, new Y(6, 0)) ? "subpixel" : 1 === P.d ? V(P.g, new Y(7, 0)) ? "subpixel" : "grayscale" : "subpixel" : "unknown";
-    var Z = ab.document.documentElement,
-        S;
-    if (1 === P.a) {
-        var Q, O;
-        if (!(O = 2 === P.d)) {
-            var M;
-            (M = 4 === P.d) || (M = -1 === W(P.f, new Y(6, 0)));
-            O = M
+        this.g = t;
+        this.a = n;
+        this.f = r
+    }(l, c, h, p);
+    var v = s(),
+        m, g = s();
+    m = "unknown" !== g ? g : 2 === a.a || 4 === a.a ? "subpixel" : 1 === a.a ? r(a.f, new t(6, 0)) ? "subpixel" : 1 === a.d ? r(a.g, new t(7, 0)) ? "subpixel" : "grayscale" : "subpixel" : "unknown";
+    var y = o.document.documentElement,
+        b;
+    if (1 === a.a) {
+        var w, E;
+        if (!(E = 2 === a.d)) {
+            var S;
+            (S = 4 === a.d) || (S = -1 === n(a.f, new t(6, 0)));
+            E = S
         }
-        if (O) {
-            Q = "gdi"
+        if (E) {
+            w = "gdi"
         } else {
-            var K;
-            if (V(P.f, new Y(6, 0))) {
-                var H;
-                if (H = 1 === P.d) {
-                    var m = P.g,
-                        g = new Y(8, 0);
-                    H = 0 === W(m, g) || -1 === W(m, g)
+            var x;
+            if (r(a.f, new t(6, 0))) {
+                var T;
+                if (T = 1 === a.d) {
+                    var N = a.g,
+                        C = new t(8, 0);
+                    T = 0 === n(N, C) || -1 === n(N, C)
                 }
-                K = H ? "gdi" : "directwrite"
+                x = T ? "gdi" : "directwrite"
             } else {
-                K = "unknown"
+                x = "unknown"
             }
-            Q = K
+            w = x
         }
-        S = Q
+        b = w
     } else {
-        S = 8 === P.a ? "directwrite" : 2 === P.a || 3 === P.a ? "coretext" : 5 === P.a || 4 === P.a || 6 === P.a || 7 === P.a || 9 === P.a ? "freetype" : "unknown"
+        b = 8 === a.a ? "directwrite" : 2 === a.a || 3 === a.a ? "coretext" : 5 === a.a || 4 === a.a || 6 === a.a || 7 === a.a || 9 === a.a ? "freetype" : "unknown"
     }
-    aa("tr-" + S);
-    "unknown" === i && "unknown" !== b && (i += "-" + b);
-    aa("tr-aa-" + i)
-}());
-(function(d, e, j, h, f, c, b) {
-    d.GoogleAnalyticsObject = f;
-    d[f] = d[f] || function() {
-        (d[f].q = d[f].q || []).push(arguments)
-    }, d[f].l = 1 * new Date();
-    c = e.createElement(j), b = e.getElementsByTagName(j)[0];
-    c.async = 1;
-    c.src = h;
-    b.parentNode.insertBefore(c, b)
+    e("tr-" + b);
+    "unknown" === v && "unknown" !== m && (v += "-" + m);
+    e("tr-aa-" + v)
+})();
+(function(e, t, n, r, i, s, o) {
+    e.GoogleAnalyticsObject = i;
+    e[i] = e[i] || function() {
+        (e[i].q = e[i].q || []).push(arguments)
+    }, e[i].l = 1 * new Date;
+    s = t.createElement(n), o = t.getElementsByTagName(n)[0];
+    s.async = 1;
+    s.src = r;
+    o.parentNode.insertBefore(s, o)
 })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
 ga("create", "UA-45524949-1", "ericlagergren.com");
 ga("send", "pageview");
@@ -184,13 +183,15 @@ $(document).ready(function() {
             background: "#fff",
             "border-bottom": "1px dotted #333"
         });
-        if ($(window).width() <= 1000) {
-            $("body").css({"margin-top":"253px"})
+        if ($(window).width() <= 1e3) {
+            $("body").css({
+                "margin-top": "253px"
+            })
         } else {
             $("body").css({
-            "margin-top": "199px"
-        })
-        };
+                "margin-top": "199px"
+            })
+        }
         $(".show_navigation").css({
             display: "none"
         });
@@ -216,3 +217,11 @@ $(document).ready(function() {
         })
     })
 });
+var disqus_shortname = "ericlagergren";
+(function() {
+    var e = document.createElement("script");
+    e.type = "text/javascript";
+    e.async = true;
+    e.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+    (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(e)
+})()

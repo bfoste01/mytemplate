@@ -1,17 +1,7 @@
---- 
-layout: default 
 ---
-<noscript>
-  <style>html{display:none;}</style>
-  <meta http-equiv="refresh" content="0;URL=http://www.ericlagergren.com/blog/">
-</noscript>
-<script type="text/javascript">
-window.location = "/blog/";
-</script>
-<script type="text/javascript">
-   if (navigator.appName == 'Microsoft Internet Explorer'){self.location = "http://www.ericlagergren.com/blog/"}
-</script>
-
+layout: default
+---
+{% include redirect.html %}
 <section itemscope itemtype="http://schema.org/BlogPosting" class="blog-post-container clearfix">
     {% for post in site.posts limit: 1 %}
     <div class="blog-post-image">
