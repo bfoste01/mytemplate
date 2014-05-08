@@ -8,14 +8,14 @@
     margin:20px 0;
     overflow:hidden
 }
-.file-data > .highlight {
-    background-color: inherit;
-    padding: inherit;
-    box-shadow: inherit;
-    margin: inherit;
+.file-data>.highlight {
+    background-color:inherit;
+    padding:inherit;
+    box-shadow:inherit;
+    margin:inherit
 }
 .gist {
-    font-size: 64.55%;
+    font-size:64.55%
 }
 code {
     font-family:'Bitstream Vera Sans Mono', Courier, monospace
@@ -195,10 +195,10 @@ body {
     background-color:transparent;
     word-break:break-word;
     word-spacing:1px;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
+    white-space:-moz-pre-wrap;
+    white-space:-pre-wrap;
+    white-space:-o-pre-wrap;
+    word-wrap:break-word
 }
 footer {
     width:100%;
@@ -233,19 +233,19 @@ hr {
 blockquote {
     font-family:futura-pt;
     border-left:5px solid #333;
-    padding: .5em 2em;
-    margin: 0px;
+    padding:.5em 2em;
+    margin:0
 }
 .twitter-tweet p {
-    margin: 0px;
+    margin:0
 }
 .yt-iframe {
-    margin: 0 auto;
-    max-width: 28em;
-    width: 100%;
-    overflow: hidden;
-    height: 15.750em;
-    max-height: 15.750em;
+    margin:0 auto;
+    max-width:28em;
+    width:100%;
+    overflow:hidden;
+    height:15.75em;
+    max-height:15.75em
 }
 a {
     color:#09c;
@@ -329,7 +329,7 @@ html[xmlns] .clearfix {
     z-index:999
 }
 .menu-bars {
-    display:none;
+    display:none
 }
 .close_navigation {
     display:none;
@@ -447,7 +447,7 @@ html[xmlns] .clearfix {
 .nav-site li a:hover {
     color:#09c;
     transition:color 1500ms cubic-bezier(0.19, 1, .22, 1) 0;
-    border-bottom: 2px solid #09c;
+    border-bottom:2px solid #09c
 }
 .nav-main .nav-site a {
     padding:0 8px;
@@ -545,10 +545,10 @@ html[xmlns] .clearfix {
 .blog-post-content {
     text-align:left;
     margin-top:4em;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
+    white-space:-moz-pre-wrap;
+    white-space:-pre-wrap;
+    white-space:-o-pre-wrap;
+    word-wrap:break-word
 }
 .blog-post-content span p img {
     text-align:center;
@@ -567,9 +567,12 @@ html[xmlns] .clearfix {
     font-size:75%
 }
 .byline {
-    font-size: 75%;
-    border-top: 1px solid #dadada;
-    border-bottom: 1px solid #dadada;
+    border-top:1px solid #dadada;
+    border-bottom:1px solid #dadada
+}
+.byline a i {
+    padding: .1em;
+    font-size: 100%;
 }
 .ppd {
     float:right
@@ -622,7 +625,7 @@ html[xmlns] .clearfix {
     overflow:hidden;
     position:relative;
     max-height:480px;
-    min-height:240px;
+    min-height:240px
 }
 .project-grouping:before {
     font-weight:400;
@@ -642,7 +645,7 @@ html[xmlns] .clearfix {
     top:50%;
     margin:-.8em 0 0 -.8em
 }
-#blog img, #code img, #pgp img, #photos img, #resume img, #ux img {
+#blog img, #code img, #pgp img, #photos img, #archives img, #ux img {
     z-index:1;
     display:block;
     position:relative;
@@ -652,9 +655,9 @@ html[xmlns] .clearfix {
     min-width:240px;
     -webkit-transition:all .5s ease;
     -moz-transition:all .5s ease;
-    transition:all .5s ease;
+    transition:all .5s ease
 }
-#blog img:hover, #code img:hover, #pgp img:hover, #photos img:hover, #resume img:hover, #ux img:hover {
+#blog img:hover, #code img:hover, #pgp img:hover, #photos img:hover, #archives img:hover, #ux img:hover {
     opacity:1;
     -webkit-filter:grayscale(0);
     -moz-filter:grayscale(0);
@@ -675,8 +678,8 @@ html[xmlns] .clearfix {
     color:#fff;
     text-align:center;
     line-height:339px;
-    background:rgba(17, 17, 18, .0);
-    opacity: 0.0;
+    background:rgba(17, 17, 18, 0);
+    opacity:0
 }
 .project-caption:after, .project-caption:before {
     content:" ";
@@ -691,7 +694,7 @@ html[xmlns] .clearfix {
     -moz-transition:all .5s ease;
     transition:all .5s ease;
     background:rgba(17, 17, 18, .8);
-    opacity: 1;
+    opacity:1
 }
 #lbOverlay {
     position:fixed;
@@ -815,9 +818,9 @@ li img {
     z-index:25;
     width:100%;
     display:block;
-    position: absolute;
-    top: 25%;
-    left: -8em;
+    position:absolute;
+    top:30%;
+    left:-8em
 }
 .contact-buttons a:hover {
     color:#00a3ca
@@ -851,11 +854,8 @@ li img {
     .desktop {
         display:none
     }
-    .mobile {
+    .menu-bars, .mobile {
         display:block
-    }
-    .menu-bars {
-        display: block;
     }
 }
 @media screen and (max-width:700px) {
@@ -938,13 +938,13 @@ li img {
         margin:0 auto
     }
     .social-image-icon {
-        display: inline-table;
+        display:inline-table
     }
     .contact-buttons {
-        position: relative;
-        display: inline-table;
-        top: inherit;
-        left: inherit;
-        margin-bottom: 1em;
+        position:relative;
+        display:inline-table;
+        top:inherit;
+        left:inherit;
+        margin-bottom:1em
     }
 }

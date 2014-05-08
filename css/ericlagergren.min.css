@@ -6,7 +6,8 @@
     -webkit-box-shadow:3px 3px rgba(0, 0, 0, .1);
     box-shadow:3px 3px rgba(0, 0, 0, .1);
     margin:20px 0;
-    overflow:hidden
+    overflow:hidden;
+    font-size: 70%;
 }
 .file-data>.highlight {
     background-color:inherit;
@@ -432,6 +433,37 @@ html[xmlns] .clearfix {
     width:30px;
     z-index:999
 }
+.dropdown-menu {
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 15px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-clip: padding-box;
+}
+nav ul ul {
+    position: absolute;
+    top: 60%;
+}
+nav ul ul li {
+    float: none;
+    position: relative;
+}
+.dropdown-menu li {
+    display: block!important;
+}
+.dropdown-menu ul > li {
+    display: none;
+}
+.dropdown-open:hover > ul {
+    display: block;
+}
 .mobile {
     display:none
 }
@@ -461,13 +493,14 @@ html[xmlns] .clearfix {
 }
 .nav-main .nav-site {
     margin:0 auto;
-    float:right
+    float:right;
+    display: inline-flex;
 }
 .nav-main .nav-site li {
     margin:0;
     line-height:20px
 }
-.nav-main li, .nav-main ul {
+.nav-main li, .nav-main > ul {
     display:inline;
     padding:0
 }
@@ -571,8 +604,8 @@ html[xmlns] .clearfix {
     border-bottom:1px solid #dadada
 }
 .byline a i {
-	padding: .1em;
-	font-size: 100%;
+    padding: .1em;
+    font-size: 100%;
 }
 .ppd {
     float:right
@@ -879,6 +912,10 @@ li img {
     .project-grouping {
         width:50%
     }
+    nav ul ul {
+        position: absolute;
+        top: 70%;
+    }
     .nav-main {
         width:100%;
         position:relative;
@@ -909,7 +946,7 @@ li img {
         margin:0;
         line-height:20px
     }
-    .nav-main li, .nav-main ul {
+    .nav-main li, .nav-main > ul {
         display:inline;
         padding:0
     }
