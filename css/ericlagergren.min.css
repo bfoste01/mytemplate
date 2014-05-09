@@ -189,7 +189,7 @@ body {
     height:100%;
     font-size:150%;
     line-height:150%;
-    color:#333;
+    color:#3A4145;
     font-family:minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
     font-weight:lighter;
     position:relative;
@@ -233,7 +233,7 @@ hr {
 }
 blockquote {
     font-family:futura-pt;
-    border-left:5px solid #333;
+    border-left:5px solid #3A4145;
     padding:.5em 2em;
     margin:0
 }
@@ -304,13 +304,25 @@ html[xmlns] .clearfix {
     width:25%;
     float:left
 }
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+    }
+}
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+}
 .wrapper {
     width:100%;
     min-height:100%;
     position:relative
 }
 .grey {
-    background-color:#333
+    background-color:#3A4145
 }
 .white {
     background-color:#fff
@@ -446,6 +458,7 @@ html[xmlns] .clearfix {
     border: 1px solid #cccccc;
     border: 1px solid rgba(0, 0, 0, 0.15);
     background-clip: padding-box;
+    text-align: left;
 }
 nav ul ul {
     position: absolute;
@@ -488,7 +501,7 @@ nav ul ul li {
     line-height:50px;
     display:inline-block;
     height:50px;
-    color:#333;
+    color:#3A4145;
     font-family:futura-pt, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
 }
 .nav-main .nav-site {
@@ -505,7 +518,7 @@ nav ul ul li {
     padding:0
 }
 .nav-home-mobile, .nav-main .nav-home {
-    color:#333;
+    color:#3A4145;
     font-family:futura-pt, sans-serif;
     font-weight:700;
     margin:0 auto;
@@ -560,12 +573,12 @@ nav ul ul li {
 .blog-post-title>a, .previous-posts-title, .previous-posts-title>a {
     font-weight:700;
     text-decoration:none;
-    color:#333;
+    color:#3A4145;
     vertical-align:-webkit-baseline-middle;
     font-family:futura-pt, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", sans-serif
 }
 .blog-post-subtitle {
-    color:#333;
+    color:#3A4145;
     font-family:futura-pt, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
     font-weight:300;
     font-size:75%;
@@ -599,13 +612,34 @@ nav ul ul li {
 .previous-posts ul {
     font-size:75%
 }
+.sm {
+    font-size: 75%;
+    font-family: futura-pt, minion-pro;
+    font-weight: 700;
+    margin:0px;
+}
+.byline-left {
+    float: left;
+}
+.byline-right {
+    float: right;
+}
 .byline {
     border-top:1px solid #dadada;
-    border-bottom:1px solid #dadada
+    border-bottom:1px solid #dadada;
+    width: 92%;
+    margin: 0 auto;
 }
 .byline a i {
     padding: .1em;
     font-size: 100%;
+    color: #BBC7CC;
+}
+.byline a {
+    color: #3A4145;
+}
+.byline a:hover i {
+    color: #3A4145;
 }
 .ppd {
     float:right
@@ -615,6 +649,19 @@ nav ul ul li {
     text-align:left;
     padding:0
 }
+.to-top {
+    position: fixed;
+    background: #3A4145;
+    color: #fff;
+    right: 20px;
+    bottom: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+.to-top a {
+    color: #fff;
+}
 .footer-container {
     width:100%
 }
@@ -622,13 +669,13 @@ nav ul ul li {
     width:92%;
     margin:0 auto;
     font-size:70%;
-    color:#333
+    color:#3A4145
 }
 .by-copyright, .powered-hosted {
     padding:25px 0
 }
 .by-copyright>a, .powered-hosted>a {
-    color:#333
+    color:#3A4145
 }
 .by-copyright>a:hover, .powered-hosted>a:hover {
     color:#09c
@@ -873,6 +920,13 @@ li img {
         content:" (" attr(href)") "
     }
 }
+@media screen and (max-width: 320px) {
+    .byline-right,
+    .byline-left {
+        float: none;
+        width: 100%;
+    }
+}
 @media screen and (max-width:550px) {
     .ppd {
         display:none
@@ -935,7 +989,7 @@ li img {
         line-height:50px;
         display:inline-block;
         height:50px;
-        color:#333;
+        color:#3A4145;
         font-family:futura-pt, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
     }
     .nav-main .nav-site {
@@ -951,7 +1005,7 @@ li img {
         padding:0
     }
     .nav-home-mobile, .nav-main .nav-home {
-        color:#333;
+        color:#3A4145;
         font-family:futura-pt, sans-serif;
         font-weight:700;
         margin:0 auto;

@@ -1,10 +1,20 @@
-<div class="byline">
-<p>By <a href="https://plus.google.com/{{ page.author.google }}?rel=author" rel="author">Eric Lagergren</a>
+<div class="byline clearfix">
+<div class="byline-left">
+<p class="sm"><span style="font-weight:lighter!important;">By</span> <a href="https://plus.google.com/{{ page.author.google }}?rel=author" rel="author">Eric Lagergren</a>
 </p>
-<p><a href="https://twitter.com/{{ page.author.twitter }}"><i class="fa fa-twitter"></i></a>
-<a href="https://www.github.com/{{ page.author.github }}"><i class="fa fa-github"></i></a>
+<p class="sm" style="font-weight:lighter;font-style:italic;text-decoration:underline;"><a href="mailto:contact@ericlagergren.com">contact@ericlagergren.com</a></p>
+</div>
+<div class="byline-right">
+<p class="sm">Share:</p>
+<p style="margin-top:0px"><a href="https://twitter.com/share?text={{ page.title }}%20via%20@{{ page.author.twitter }}&url={{ site.url }}{{ page.url }}"><i class="fa fa-twitter"></i></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url}}{{ page.url}}"><i class="fa fa-facebook"></i></a>
+<a href="https://plus.google.com/share?url={{ site.url}}{{ page.url}}"><i class="fa fa-google-plus"></i></a>
+
+<!--<a href="https://www.github.com/{{ page.author.github }}"><i class="fa fa-github"></i></a>
 <a href="https://www.instagram.com/{{ page.author.instagram }}"><i class="fa fa-instagram"></i></a>
-<a href="https://www.facebook.com/{{ page.author.facebook }}"><i class="fa fa-facebook"></i></a>
 <a href="mailto:{{ page.author.email }}"><i class="fa fa-envelope"></i></a>
+<a href="https://news.ycombinator.com/user?id={{ page.author.ycomb }}">Y</a>-->
+
 </p>
+</div>
 </div>
