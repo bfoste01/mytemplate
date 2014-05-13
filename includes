@@ -5,7 +5,7 @@
             <div class="powered-hosted">Powered by <a href="http://jekyllrb.com">Jekyll</a>&nbsp;&nbsp;&amp;&nbsp;&nbsp;Hosted on <a href="https://www.github.com">GitHub</a></div>
         </div>-->
         <div class="col nofloat">
-            <div class="by-copyright">&copy;&nbsp;&nbsp;<a href="/about">Eric Lagergren</a> <a href="/license.txt">2013-2014</a>
+            <div class="by-copyright">&copy;&nbsp;&nbsp;<a href="/about">{{site.author.name}}</a> <a href="/license.txt">2013-2014</a>
             </div>
         </div>
     </div>
