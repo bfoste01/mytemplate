@@ -233,7 +233,7 @@ hr {
     margin-top:50px
 }
 blockquote {
-    font-family:futura-pt;
+    font-family:futura-pt, 'Open Sans', sans-serif;
     border-left:5px solid #3A4145;
     padding:.5em 2em;
     margin:0
@@ -506,7 +506,7 @@ nav ul ul li {
     display:inline-block;
     height:50px;
     color:#3A4145;
-    font-family:futura-pt, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
+    font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
 }
 .nav-main .nav-site {
     margin:0 auto;
@@ -579,18 +579,18 @@ nav ul ul li {
     text-decoration:none;
     color:#3A4145;
     vertical-align:-webkit-baseline-middle;
-    font-family:futura-pt, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", sans-serif
+    font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", sans-serif
 }
 .blog-post-subtitle {
     color:#3A4145;
-    font-family:futura-pt, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
     font-weight:300;
     font-size:75%;
     line-height:150%
 }
 .blog-post-date {
     font-size:75%;
-    font-family:futura-pt, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
+    font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
 }
 .blog-post-content {
     text-align:left;
@@ -618,7 +618,7 @@ nav ul ul li {
 }
 .sm {
     font-size: 75%;
-    font-family: futura-pt, minion-pro;
+    font-family: futura-pt,  'Open Sans', sans-serif, minion-pro;
     font-weight: 700;
     margin:0px;
 }
@@ -1009,7 +1009,7 @@ li img {
         display:inline-block;
         height:50px;
         color:#3A4145;
-        font-family:futura-pt, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
+        font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
     }
     .nav-main .nav-site {
         margin:0;
@@ -1025,7 +1025,7 @@ li img {
     }
     .nav-home-mobile, .nav-main .nav-home {
         color:#3A4145;
-        font-family:futura-pt, sans-serif;
+        font-family:futura-pt, 'Open Sans', sans-serif;
         font-weight:700;
         margin:0 auto;
         float:none
