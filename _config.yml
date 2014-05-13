@@ -3,6 +3,18 @@ highlighter: pygments
 permalink: /blog/:title
 include: ['.htaccess']
 url: http://www.ericlagergren.com
-title: Eric Lagergren
-tagline: Eric Lagergren | CNE Politics Sports
+title: ERIC LAGERGREN
 description: Eric Lagergren's Blog Projects and Resume
+urldescription: Eric Lagergren | CNE, Politics, Sports
+image: http://www.ericlagergren.com/img/eric.jpg
+
+author:
+  name: Eric Lagergren
+  email: contact@ericlagergren.com
+  phone: +1 (253) 405-5495
+  github: ericlagerg
+  twitter: elagergren
+  instagram: ericscotttt
+  linkedin: in/elagerg
+  facebook: eric.lagergren.9
+  google: +EricLagergren5894

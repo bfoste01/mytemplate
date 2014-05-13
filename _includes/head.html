@@ -4,27 +4,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
     <meta name="robots" content="index, follow">
     <meta name="bitly-verification" content="7c235b444737"/>
-    <meta name="description" content="Blog and portfolio for Eric Lagergren -- a college student studying CNE at Pierce College. Loves sports, politics, and is from Puyallup, Washington.">
-    <meta name="author" content="Eric Lagergren">
+    <meta name="description" content="{{site.description}}"/>
+    <meta name="author" content="{{site.author.name}}">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.ericlagergren.com">
-    <meta property="og:image" content="http://www.ericlagergren.com/{{ page.img }}">
-    <meta property="og:description" content="Blog and portfolio for Eric Lagergren -- a college student studying CNE at Pierce College. Loves sports, politics, and is from Puyallup, Washington.">
+    <meta property="og:url" content="{{site.url}}">
+    <meta property="og:image" content="{{site.url}}/{{ page.img }}">
+    <meta property="og:description" content="{{site.description}}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@elagergren">
+    <meta name="twitter:site" content="@{{site.author.twitter}}">
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ page.subtitle }}">
-    <meta name="twitter:creator" content="@elagergren">
-    <meta name="twitter:image:src" content="http://www.ericlagergren.com{{ page.img }}">
-    <meta name="twitter:domain" content="www.ericlagergren.com">
+    <meta name="twitter:creator" content="@{{site.author.twitter}}">
+    <meta name="twitter:image:src" content="{{site.url}}/{{ page.img }}">
+    <meta name="twitter:domain" content="{{site.url}}">
     <script type="text/javascript" src="//use.typekit.net/uui0gci.js"></script>
     <script type="text/javascript">
     try {
         Typekit.load();
     } catch (e) {}
     </script>
-    <title>Eric Lagergren | CNE, Politics, Sports</title>
+    <title>{{ site.title}}</title>
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
     <link rel="shortcut icon" href="../img/nonanimatedfavicon.ico">
     <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>-->
