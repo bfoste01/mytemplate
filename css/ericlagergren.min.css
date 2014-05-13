@@ -360,7 +360,7 @@ html[xmlns] .clearfix {
     right:10px;
     cursor:pointer;
     cursor:hand;
-    background-color:#f4f4f4
+    background-color:#ffffff
 }
 .show_navigation {
     display:block;
@@ -376,7 +376,7 @@ html[xmlns] .clearfix {
     z-index:9999;
     top:10px;
     right:10px;
-    background:#f4f4f4;
+    background:#ffffff;
     cursor:hand
 }
 #navigation {
@@ -662,6 +662,9 @@ nav ul ul li {
 .to-top a {
     color: #fff;
 }
+.to-top a:hover {
+    text-decoration: none;
+}
 .footer-container {
     width:100%
 }
@@ -905,8 +908,11 @@ li img {
 .contact-buttons a:hover {
     color:#00a3ca
 }
+.fa-instagram {
+    padding-right: 3px;
+}
 .contact-buttons a {
-    color:#ba2d12
+    color:#BBC7CC;
 }
 .repo-wrap-inner {
     margin:0 auto;
