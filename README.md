@@ -1,3 +1,6 @@
 These is the template for my website, www.ericlagergren.com (EricLagerg.github.io)
 
-It's a website, so it really doesn't need a license, but I figured I'd choose one anyway, so it's covered under the MIT License, found in my license.txt file.
+---
+
+All these files are covered under the MIT License, which can be found in the LICENSE.txt file. Feel free to use, fork, whatever. It's fairly straightforward. Feel free to contact me if you need help.`
+

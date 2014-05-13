@@ -94,16 +94,6 @@ permalink: 404.html
 
       $.plax.enable()
 
-      $(document).on('keydown', function(event) {
-        if (event.target === document.body && event.keyCode === 192 && !event.metaKey) {
-          $('#parallax_wrapper').css('-webkit-filter','grayscale(25%)')
-
-          setTimeout(function() {
-            window.location = '/site/toggle_staff'
-          }, 250)
-          return false;
-        }
-      })
     </script>
   </body>
 </html>
