@@ -4,6 +4,7 @@ permalink: /blog/:title
 include: ['.htaccess']
 url: http://www.ericlagergren.com
 title: ERIC LAGERGREN
+description: Eric Lagergren's Blog Projects and Resume
 urldescription: Eric Lagergren | CNE, Politics, Sports
 image: http://www.ericlagergren.com/img/eric.jpg
 
