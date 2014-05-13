@@ -206,7 +206,8 @@ footer {
     position:relative;
     bottom:0;
     left:0;
-    height:80px
+    margin-top:2em;
+    margin-bottom:2em;
 }
 #message {
     position:absolute;
@@ -283,6 +284,9 @@ table {
 }
 html[xmlns] .clearfix {
     display:block
+}
+.nofloat {
+    float: none!important;
 }
 .col {
     width:100%;
@@ -618,6 +622,9 @@ nav ul ul li {
     font-weight: 700;
     margin:0px;
 }
+#disqus_thread {
+    margin-top: 2em;
+}
 .byline-left {
     float: left;
 }
@@ -627,8 +634,8 @@ nav ul ul li {
 .byline {
     border-top:1px solid #dadada;
     border-bottom:1px solid #dadada;
-    width: 92%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 2em auto 0 auto;
 }
 .byline a i {
     padding: .1em;
@@ -675,7 +682,7 @@ nav ul ul li {
     color:#3A4145
 }
 .by-copyright, .powered-hosted {
-    padding:25px 0
+    padding:0
 }
 .by-copyright>a, .powered-hosted>a {
     color:#3A4145
@@ -687,7 +694,7 @@ nav ul ul li {
     text-align:left
 }
 .by-copyright {
-    text-align:right
+    text-align:center;
 }
 .right {
     float:right!important
@@ -927,10 +934,16 @@ li img {
     }
 }
 @media screen and (max-width: 320px) {
-    .byline-right,
+/*    .byline-right,
     .byline-left {
         float: none;
         width: 100%;
+    }*/
+    .nav-site li {
+        line-height: 10px;
+    }
+    .social-image-icon {
+        padding: 10px;
     }
 }
 @media screen and (max-width:550px) {
