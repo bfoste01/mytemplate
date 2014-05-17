@@ -7,7 +7,7 @@
     box-shadow:3px 3px rgba(0, 0, 0, .1);
     margin:20px 0;
     overflow:hidden;
-    font-size: 70%;
+    font-size:70%
 }
 .file-data>.highlight {
     background-color:inherit;
@@ -207,7 +207,7 @@ footer {
     bottom:0;
     left:0;
     margin-top:2em;
-    margin-bottom:2em;
+    margin-bottom:2em
 }
 #message {
     position:absolute;
@@ -286,7 +286,7 @@ html[xmlns] .clearfix {
     display:block
 }
 .nofloat {
-    float: none!important;
+    float:none!important
 }
 .col {
     width:100%;
@@ -310,15 +310,15 @@ html[xmlns] .clearfix {
 }
 @keyframes come-in {
     to {
-        transform: translateY(0);
+        transform:translateY(0)
     }
 }
 .come-in {
-    transform: translateY(150px);
-    animation: come-in 0.8s ease forwards;
+    transform:translateY(150px);
+    animation:come-in .8s ease forwards
 }
 .come-in:nth-child(odd) {
-    animation-duration: 0.6s;
+    animation-duration:.6s
 }
 .wrapper {
     width:100%;
@@ -364,7 +364,7 @@ html[xmlns] .clearfix {
     right:10px;
     cursor:pointer;
     cursor:hand;
-    background-color:#ffffff
+    background-color:#fff
 }
 .show_navigation {
     display:block;
@@ -380,7 +380,7 @@ html[xmlns] .clearfix {
     z-index:9999;
     top:10px;
     right:10px;
-    background:#ffffff;
+    background:#fff;
     cursor:hand
 }
 #navigation {
@@ -450,36 +450,36 @@ html[xmlns] .clearfix {
     z-index:999
 }
 .dropdown-menu {
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 160px;
-    padding: 5px 0;
-    margin: 2px 0 0;
-    list-style: none;
-    font-size: 15px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    background-clip: padding-box;
-    text-align: left;
+    z-index:1000;
+    display:none;
+    float:left;
+    min-width:160px;
+    padding:5px 0;
+    margin:2px 0 0;
+    list-style:none;
+    font-size:15px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    border:1px solid rgba(0, 0, 0, .15);
+    background-clip:padding-box;
+    text-align:left
 }
 nav ul ul {
-    position: absolute;
-    top: 60%;
+    position:absolute;
+    top:60%
 }
 nav ul ul li {
-    float: none;
-    position: relative;
+    float:none;
+    position:relative
 }
 .dropdown-menu li {
-    display: block!important;
+    display:block!important
 }
-.dropdown-menu ul > li {
-    display: none;
+.dropdown-menu ul>li {
+    display:none
 }
-.dropdown-open:hover > ul {
-    display: block;
+.dropdown-open:hover>ul {
+    display:block
 }
 .mobile {
     display:none
@@ -511,13 +511,13 @@ nav ul ul li {
 .nav-main .nav-site {
     margin:0 auto;
     float:right;
-    display: inline-flex;
+    display:inline-flex
 }
 .nav-main .nav-site li {
     margin:0;
     line-height:20px
 }
-.nav-main li, .nav-main > ul {
+.nav-main li, .nav-main>ul {
     display:inline;
     padding:0
 }
@@ -579,18 +579,18 @@ nav ul ul li {
     text-decoration:none;
     color:#3A4145;
     vertical-align:-webkit-baseline-middle;
-    font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", sans-serif
+    font-family:futura-pt, sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", sans-serif
 }
 .blog-post-subtitle {
     color:#3A4145;
-    font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-family:futura-pt, sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
     font-weight:300;
     font-size:75%;
     line-height:150%
 }
 .blog-post-date {
     font-size:75%;
-    font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
+    font-family:futura-pt, sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
 }
 .blog-post-content {
     text-align:left;
@@ -617,36 +617,33 @@ nav ul ul li {
     font-size:75%
 }
 .sm {
-    font-size: 75%;
-    font-family: futura-pt,  'Open Sans', sans-serif, minion-pro;
-    font-weight: 700;
-    margin:0px;
+    font-size:75%;
+    font-family:futura-pt, sans-serif, minion-pro;
+    font-weight:700;
+    margin:0
 }
 #disqus_thread {
-    margin-top: 2em;
+    margin-top:2em
 }
 .byline-left {
-    float: left;
+    float:left
 }
 .byline-right {
-    float: right;
+    float:right
 }
 .byline {
     border-top:1px solid #dadada;
     border-bottom:1px solid #dadada;
-    width: 100%;
-    margin: 2em auto 0 auto;
+    width:100%;
+    margin:2em auto 0
 }
 .byline a i {
-    padding: .1em;
-    font-size: 100%;
-    color: #BBC7CC;
+    padding:.1em;
+    font-size:100%;
+    color:#BBC7CC
 }
-.byline a {
-    color: #3A4145;
-}
-.byline a:hover i {
-    color: #3A4145;
+.byline a, .byline a:hover i {
+    color:#3A4145
 }
 .ppd {
     float:right
@@ -657,20 +654,20 @@ nav ul ul li {
     padding:0
 }
 .to-top {
-    position: fixed;
-    background: #3A4145;
-    color: #fff;
-    right: 20px;
-    bottom: 20px;
-    height: 30px;
-    width: 30px;
-    text-align: center;
+    position:fixed;
+    background:#3A4145;
+    color:#fff;
+    right:20px;
+    bottom:20px;
+    height:30px;
+    width:30px;
+    text-align:center
 }
 .to-top a {
-    color: #fff;
+    color:#fff
 }
 .to-top a:hover {
-    text-decoration: none;
+    text-decoration:none
 }
 .footer-container {
     width:100%
@@ -694,7 +691,7 @@ nav ul ul li {
     text-align:left
 }
 .by-copyright {
-    text-align:center;
+    text-align:center
 }
 .right {
     float:right!important
@@ -735,7 +732,7 @@ nav ul ul li {
     top:50%;
     margin:-.8em 0 0 -.8em
 }
-#blog img, #code img, #pgp img, #photos img, #archives img, #ux img {
+#archives img, #blog img, #code img, #pgp img, #photos img, #ux img {
     z-index:1;
     display:block;
     position:relative;
@@ -747,7 +744,7 @@ nav ul ul li {
     -moz-transition:all .5s ease;
     transition:all .5s ease
 }
-#blog img:hover, #code img:hover, #pgp img:hover, #photos img:hover, #archives img:hover, #ux img:hover {
+#archives img:hover, #blog img:hover, #code img:hover, #pgp img:hover, #photos img:hover, #ux img:hover {
     opacity:1;
     -webkit-filter:grayscale(0);
     -moz-filter:grayscale(0);
@@ -916,10 +913,10 @@ li img {
     color:#00a3ca
 }
 .fa-instagram {
-    padding-right: 3px;
+    padding-right:3px
 }
 .contact-buttons a {
-    color:#BBC7CC;
+    color:#BBC7CC
 }
 .repo-wrap-inner {
     margin:0 auto;
@@ -933,17 +930,12 @@ li img {
         content:" (" attr(href)") "
     }
 }
-@media screen and (max-width: 320px) {
-/*    .byline-right,
-    .byline-left {
-        float: none;
-        width: 100%;
-    }*/
+@media screen and (max-width:320px) {
     .nav-site li {
-        line-height: 10px;
+        line-height:10px
     }
     .social-image-icon {
-        padding: 10px;
+        padding:10px
     }
 }
 @media screen and (max-width:550px) {
@@ -986,8 +978,8 @@ li img {
         width:50%
     }
     nav ul ul {
-        position: absolute;
-        top: 70%;
+        position:absolute;
+        top:70%
     }
     .nav-main {
         width:100%;
@@ -1009,7 +1001,7 @@ li img {
         display:inline-block;
         height:50px;
         color:#3A4145;
-        font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
+        font-family:futura-pt, sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
     }
     .nav-main .nav-site {
         margin:0;
@@ -1019,13 +1011,13 @@ li img {
         margin:0;
         line-height:20px
     }
-    .nav-main li, .nav-main > ul {
+    .nav-main li, .nav-main>ul {
         display:inline;
         padding:0
     }
     .nav-home-mobile, .nav-main .nav-home {
         color:#3A4145;
-        font-family:futura-pt, 'Open Sans', sans-serif;
+        font-family:futura-pt, sans-serif;
         font-weight:700;
         margin:0 auto;
         float:none

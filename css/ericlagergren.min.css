@@ -7,7 +7,7 @@
     box-shadow:3px 3px rgba(0, 0, 0, .1);
     margin:20px 0;
     overflow:hidden;
-    font-size: 70%;
+    font-size:70%
 }
 .file-data>.highlight {
     background-color:inherit;
@@ -187,9 +187,9 @@ code {
 body {
     margin:0;
     height:100%;
-    font-size:150%;
-    line-height:150%;
-    color:#3A4145;
+    font-size:140%;
+    line-height:1.5em;
+    color:#333333;
     font-family:minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
     font-weight:lighter;
     position:relative;
@@ -199,7 +199,7 @@ body {
     white-space:-moz-pre-wrap;
     white-space:-pre-wrap;
     white-space:-o-pre-wrap;
-    word-wrap:break-word
+    word-wrap:break-word;
 }
 footer {
     width:100%;
@@ -207,7 +207,7 @@ footer {
     bottom:0;
     left:0;
     margin-top:2em;
-    margin-bottom:2em;
+    margin-bottom:3em
 }
 #message {
     position:absolute;
@@ -216,6 +216,12 @@ footer {
     background:#ff0;
     z-index:99999;
     display:none
+}
+.right {
+    display: block;
+}
+.left {
+    display: none;
 }
 h1 {
     line-height:1.5em;
@@ -234,9 +240,9 @@ hr {
 }
 blockquote {
     font-family:futura-pt, 'Open Sans', sans-serif;
-    border-left:5px solid #3A4145;
+    border-left:5px solid #333333;
     padding:.5em 2em;
-    margin:0
+    margin:2em 0 auto;
 }
 .twitter-tweet p {
     margin:0
@@ -248,6 +254,12 @@ blockquote {
     overflow:hidden;
     height:15.75em;
     max-height:15.75em
+}
+p {
+    font-size: 100%;
+    margin: 2em 0 auto;
+    clear:both;
+    word-spacing: 1px;
 }
 a {
     color:#09c;
@@ -286,7 +298,7 @@ html[xmlns] .clearfix {
     display:block
 }
 .nofloat {
-    float: none!important;
+    float:none!important
 }
 .col {
     width:100%;
@@ -308,25 +320,13 @@ html[xmlns] .clearfix {
     width:25%;
     float:left
 }
-@keyframes come-in {
-    to {
-        transform: translateY(0);
-    }
-}
-.come-in {
-    transform: translateY(150px);
-    animation: come-in 0.8s ease forwards;
-}
-.come-in:nth-child(odd) {
-    animation-duration: 0.6s;
-}
 .wrapper {
     width:100%;
     min-height:100%;
     position:relative
 }
 .grey {
-    background-color:#3A4145
+    background-color:#333333
 }
 .white {
     background-color:#fff
@@ -364,7 +364,7 @@ html[xmlns] .clearfix {
     right:10px;
     cursor:pointer;
     cursor:hand;
-    background-color:#ffffff
+    background-color:#fff
 }
 .show_navigation {
     display:block;
@@ -380,7 +380,7 @@ html[xmlns] .clearfix {
     z-index:9999;
     top:10px;
     right:10px;
-    background:#ffffff;
+    background:#fff;
     cursor:hand
 }
 #navigation {
@@ -445,41 +445,41 @@ html[xmlns] .clearfix {
 }
 .close_navigation span, .show_navigation span {
     display:block;
-    height:3px;
+    height:5px;
     width:30px;
     z-index:999
 }
 .dropdown-menu {
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 160px;
-    padding: 5px 0;
-    margin: 2px 0 0;
-    list-style: none;
-    font-size: 15px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    background-clip: padding-box;
-    text-align: left;
+    z-index:1000;
+    display:none;
+    float:left;
+    min-width:160px;
+    padding:5px 0;
+    margin:2px 0 0;
+    list-style:none;
+    font-size:15px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    border:1px solid rgba(0, 0, 0, .15);
+    background-clip:padding-box;
+    text-align:left
 }
 nav ul ul {
-    position: absolute;
-    top: 60%;
+    position:absolute;
+    top:60%
 }
 nav ul ul li {
-    float: none;
-    position: relative;
+    float:none;
+    position:relative
 }
 .dropdown-menu li {
-    display: block!important;
+    display:block!important
 }
-.dropdown-menu ul > li {
-    display: none;
+.dropdown-menu ul>li {
+    display:none
 }
-.dropdown-open:hover > ul {
-    display: block;
+.dropdown-open:hover>ul {
+    display:block
 }
 .mobile {
     display:none
@@ -487,9 +487,9 @@ nav ul ul li {
 .nav-main {
     position:relative;
     top:0;
-    font-size:75%;
+    font-size:85%;
     padding:4em 0;
-    z-index:9999;
+    /*z-index:9999;*/  
     margin:0 auto;
     max-width:80em
 }
@@ -505,24 +505,24 @@ nav ul ul li {
     line-height:50px;
     display:inline-block;
     height:50px;
-    color:#3A4145;
+    color:#333333;
     font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
 }
 .nav-main .nav-site {
     margin:0 auto;
     float:right;
-    display: inline-flex;
+    display:inline-flex
 }
 .nav-main .nav-site li {
     margin:0;
     line-height:20px
 }
-.nav-main li, .nav-main > ul {
+.nav-main li, .nav-main>ul {
     display:inline;
     padding:0
 }
 .nav-home-mobile, .nav-main .nav-home {
-    color:#3A4145;
+    color:#333333;
     font-family:futura-pt, sans-serif;
     font-weight:700;
     margin:0 auto;
@@ -553,7 +553,7 @@ nav ul ul li {
     text-align:center;
     float:none;
     width:90%;
-    margin:0 auto
+    margin:2em auto 0 auto
 }
 .blog-post-inner {
     text-align:center;
@@ -572,25 +572,28 @@ nav ul ul li {
 }
 .blog-post-title, .previous-posts-title {
     text-align:center;
-    font-weight:lighter
+    font-weight:lighter;
+    font-size: 160%;
+    line-height: 125%;
 }
 .blog-post-title>a, .previous-posts-title, .previous-posts-title>a {
     font-weight:700;
     text-decoration:none;
-    color:#3A4145;
+    color:#333333;
     vertical-align:-webkit-baseline-middle;
-    font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", sans-serif
+    font-family:futura-pt, sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", sans-serif
 }
 .blog-post-subtitle {
-    color:#3A4145;
-    font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    color:#333333;
+    font-family:futura-pt, sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
     font-weight:300;
-    font-size:75%;
+    font-size:85%;
     line-height:150%
 }
 .blog-post-date {
-    font-size:75%;
-    font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
+    font-size:85%;
+    font-family:futura-pt, sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    margin-top:2em;
 }
 .blog-post-content {
     text-align:left;
@@ -602,7 +605,7 @@ nav ul ul li {
 }
 .blog-post-content span p img {
     text-align:center;
-    max-width:45%;
+    max-width:28em;
     height:auto
 }
 .previous-posts-container {
@@ -614,39 +617,36 @@ nav ul ul li {
     max-width:28em
 }
 .previous-posts ul {
-    font-size:75%
+    font-size:85%
 }
 .sm {
-    font-size: 75%;
-    font-family: futura-pt,  'Open Sans', sans-serif, minion-pro;
-    font-weight: 700;
-    margin:0px;
+    font-size:85%;
+    font-family:futura-pt, sans-serif, minion-pro;
+    font-weight:700;
+    margin:0
 }
 #disqus_thread {
-    margin-top: 2em;
+    margin-top:2em
 }
 .byline-left {
-    float: left;
+    float:left
 }
 .byline-right {
-    float: right;
+    float:right
 }
 .byline {
-    border-top:1px solid #dadada;
-    border-bottom:1px solid #dadada;
-    width: 100%;
-    margin: 2em auto 0 auto;
+    border-top:solid 1px #eee;
+    border-bottom:solid 1px #eee;
+    width:100%;
+    margin:2em auto 0
 }
 .byline a i {
-    padding: .1em;
-    font-size: 100%;
-    color: #BBC7CC;
+    padding:.1em;
+    font-size:100%;
+    color:#BBC7CC
 }
-.byline a {
-    color: #3A4145;
-}
-.byline a:hover i {
-    color: #3A4145;
+.byline a, .byline a:hover i {
+    color:#333333
 }
 .ppd {
     float:right
@@ -657,20 +657,25 @@ nav ul ul li {
     padding:0
 }
 .to-top {
-    position: fixed;
-    background: #3A4145;
-    color: #fff;
-    right: 20px;
-    bottom: 20px;
-    height: 30px;
-    width: 30px;
-    text-align: center;
+    position:absolute;
+    background:#333333;
+    color:#fff;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    bottom:20px;
+    height:32px;
+    width:32px;
+    text-align:center;
+    border-radius: 50%;
 }
 .to-top a {
-    color: #fff;
+    color:#fff
 }
 .to-top a:hover {
-    text-decoration: none;
+    text-decoration:none;
 }
 .footer-container {
     width:100%
@@ -679,13 +684,13 @@ nav ul ul li {
     width:92%;
     margin:0 auto;
     font-size:70%;
-    color:#3A4145
+    color:#333333
 }
 .by-copyright, .powered-hosted {
     padding:0
 }
 .by-copyright>a, .powered-hosted>a {
-    color:#3A4145
+    color:#333333
 }
 .by-copyright>a:hover, .powered-hosted>a:hover {
     color:#09c
@@ -694,7 +699,7 @@ nav ul ul li {
     text-align:left
 }
 .by-copyright {
-    text-align:center;
+    text-align:center
 }
 .right {
     float:right!important
@@ -735,7 +740,7 @@ nav ul ul li {
     top:50%;
     margin:-.8em 0 0 -.8em
 }
-#blog img, #code img, #pgp img, #photos img, #archives img, #ux img {
+#archives img, #blog img, #code img, #pgp img, #photos img, #ux img {
     z-index:1;
     display:block;
     position:relative;
@@ -747,7 +752,7 @@ nav ul ul li {
     -moz-transition:all .5s ease;
     transition:all .5s ease
 }
-#blog img:hover, #code img:hover, #pgp img:hover, #photos img:hover, #archives img:hover, #ux img:hover {
+#archives img:hover, #blog img:hover, #code img:hover, #pgp img:hover, #photos img:hover, #ux img:hover {
     opacity:1;
     -webkit-filter:grayscale(0);
     -moz-filter:grayscale(0);
@@ -909,17 +914,17 @@ li img {
     width:100%;
     display:block;
     position:absolute;
-    top:30%;
+    top:28%;
     left:-8em
 }
 .contact-buttons a:hover {
     color:#00a3ca
 }
 .fa-instagram {
-    padding-right: 3px;
+    padding-right:3px
 }
 .contact-buttons a {
-    color:#BBC7CC;
+    color:#BBC7CC
 }
 .repo-wrap-inner {
     margin:0 auto;
@@ -933,17 +938,12 @@ li img {
         content:" (" attr(href)") "
     }
 }
-@media screen and (max-width: 320px) {
-/*    .byline-right,
-    .byline-left {
-        float: none;
-        width: 100%;
-    }*/
+@media screen and (max-width:320px) {
     .nav-site li {
-        line-height: 10px;
+        line-height:10px
     }
     .social-image-icon {
-        padding: 10px;
+        padding:10px
     }
 }
 @media screen and (max-width:550px) {
@@ -962,6 +962,12 @@ li img {
     }
     .menu-bars, .mobile {
         display:block
+    }
+    .right {
+        display: none;
+    }
+    .left {
+        display: block;
     }
 }
 @media screen and (max-width:700px) {
@@ -986,14 +992,14 @@ li img {
         width:50%
     }
     nav ul ul {
-        position: absolute;
-        top: 70%;
+        position:absolute;
+        top:70%
     }
     .nav-main {
         width:100%;
         position:relative;
         top:0;
-        font-size:75%;
+        font-size:85%;
         padding:4em 0;
         z-index:9999
     }
@@ -1008,8 +1014,8 @@ li img {
         line-height:50px;
         display:inline-block;
         height:50px;
-        color:#3A4145;
-        font-family:futura-pt, 'Open Sans', sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
+        color:#333333;
+        font-family:futura-pt, sans-serif, minion-pro, Georgia, "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
     }
     .nav-main .nav-site {
         margin:0;
@@ -1019,13 +1025,13 @@ li img {
         margin:0;
         line-height:20px
     }
-    .nav-main li, .nav-main > ul {
+    .nav-main li, .nav-main>ul {
         display:inline;
         padding:0
     }
     .nav-home-mobile, .nav-main .nav-home {
-        color:#3A4145;
-        font-family:futura-pt, 'Open Sans', sans-serif;
+        color:#333333;
+        font-family:futura-pt, sans-serif;
         font-weight:700;
         margin:0 auto;
         float:none
