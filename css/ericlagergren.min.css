@@ -350,11 +350,10 @@ html[xmlns] .clearfix {
     border:1px solid #ccc;
     border:1px solid rgba(0, 0, 0, .15);
     background-clip:padding-box;
-    text-align:left
+    text-align:left;
 }
 nav ul ul {
     position:absolute;
-    top:60%
 }
 nav ul ul li {
     float:none;
@@ -930,7 +929,8 @@ li img {
     }
     .nav-main .nav-site {
         margin:0;
-        float:none
+        float:none;
+        position: relative;
     }
     .nav-main .nav-site li {
         margin:0;
